@@ -1,0 +1,24 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+background-color: darkorange;
+}
+button {
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.uno {
+    background-color: red;
+    height: 300px;
+}
+.due {
+    background-color: darkorange;
+    height: 300px;
+}
+.tre {
+    background-color:pink;
+    height: 300px;
+}
