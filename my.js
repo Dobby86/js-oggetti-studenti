@@ -20,10 +20,11 @@ $("button").click(function(){
     // var studente = studente.lenght;
 for ( var i in studente) {
     console.log(studente[i]);
-    $("h1").text(studente[i]);
+    // prece = document.getElementById("ok").innerHTML;
+    prece = $("h1").html();
+    document.getElementById("ok").innerHTML = prece + " " + studente[i];
 
 }
-
 });
 // esercizio 2222222222222222222
 // - Creare un array di oggetti di studenti.
@@ -41,19 +42,19 @@ var studenti = [
     nome : "aldoo",
     cognome : "ciufciuf"
 }];
-var studentiVari = studenti[0];
+
 
 for (var i=0; i< studenti.length; i++){
     //
-    primoNome = studenti[i].nome;
-    primoCognome = studenti[i].cognome;
+    var studentiVari = studenti[i];
+    var primoNome = studenti[i].nome;
+     var primoCognome = studenti[i].cognome;
 
     //
-    console.log(primoNome + " " + primoCognome );
-    $("h2").text(primoNome + " " + primoCognome );
+    console.log(primoNome + primoCognome);
+    $("h2").text(primoNome + " " + primoCognome);
 }
 // esercizio 3333333333
-// - Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
 // fine
 });
