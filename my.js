@@ -22,7 +22,7 @@ for ( var i in studente) {
     console.log(studente[i]);
     // prece = document.getElementById("ok").innerHTML;
     prece = $("h1").html();
-    document.getElementById("ok").innerHTML = prece + " " + studente[i];
+    prece = prece + " " + studente[i];
 
 }
 });
@@ -52,7 +52,8 @@ for (var i=0; i< studenti.length; i++){
 
     //
     console.log(primoNome + primoCognome);
-    $("h2").text(primoNome + " " + primoCognome);
+    var postato = $(".due");
+    postato.append( " " + primoNome + " " + primoCognome);
 }
 // esercizio 3333333333
 
