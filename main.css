@@ -17,14 +17,19 @@ button {
 .due {
     background-color: darkorange;
     height: 33.3vh;
+    font-size: 45px;
 }
 .tre {
     background-color:pink;
     height: 33.3vh;
+    font-size: 45px;
 }
 h1 {
     font-size: 45px;
 }
 h2 {
+    font-size: 45px;
+}
+p {
     font-size: 45px;
 }
