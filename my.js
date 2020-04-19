@@ -22,7 +22,7 @@ for ( var i in studente) {
     console.log(studente[i]);
     // prece = document.getElementById("ok").innerHTML;
     prece = $("h1").html();
-    prece = prece + " " + studente[i];
+    document.getElementById("ok").innerHTML = prece + " " + studente[i];
 
 }
 });
@@ -56,6 +56,48 @@ for (var i=0; i< studenti.length; i++){
     postato.append( " " + primoNome + " " + primoCognome);
 }
 // esercizio 3333333333
+// Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var studentes = [
+{
+    nome : "roberto",
+    cognome : "treq",
+    eta : 34
+},
+{
+    nome : "nicola",
+    cognome : "biatji",
+    eta : 28
+},
+ {
+    nome : "salvatore",
+    cognome : "zang",
+    eta : 25
+}];
+// vari prompt
+var inserisciNome = prompt("inserisci nome");
+var inserisciCognome =  prompt("inserisci cognome");
+var inserisciEta = parseInt(prompt("inserire eta"));
+// inseriamo il push
+studentes.push({
+    "nome" : inserisciNome,
+    "cognome" : inserisciCognome,
+    "eta" : inserisciEta
+}
 
+);
+for (var i=0; i< studentes.length; i++){
+    //
+    var studentesVari = studentes[i];
+    var secondiNome = studentes[i].nome;
+     var secondiCognome = studentes[i].cognome;
+     var secondiEta = studentes[i].eta;
+
+    //
+    console.log(secondiNome +secondiCognome
+    +secondiEta);
+
+    var postato = $(".tre");
+    postato.append( " " + secondiNome + " " + secondiCognome + " " + secondiEta);
+}
 // fine
 });
